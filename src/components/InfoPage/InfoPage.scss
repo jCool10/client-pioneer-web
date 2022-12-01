@@ -1,0 +1,36 @@
+.infoPage {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 50px;
+  position: relative;
+
+  .currentEvent {
+
+    grid-column: span 8 / span 8;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    h2 {
+      font-weight: 700;
+    }
+
+    .indicator {
+      height: 3px;
+      background: #000;
+      margin: 20px;
+    }
+  }
+
+  .remainingEvent {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 20px;
+  }
+}

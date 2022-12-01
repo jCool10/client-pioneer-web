@@ -1,0 +1,23 @@
+.product {
+  .cover {
+    background-image: url(../../assets/product_cover.png);
+    height: 700px;
+  }
+
+  .label {
+    width: 565px;
+    height: 100px;
+    box-shadow: -4px -4px 5px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    color: #000;
+    font-weight: 700;
+    font-size: 60px;
+  }
+
+
+}

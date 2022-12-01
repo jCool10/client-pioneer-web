@@ -1,0 +1,322 @@
+// // .homeContent {
+// //   display: flex;
+// //   justify-content: center;
+// //   align-items: center;
+// //   position: relative;
+// //   height: 75vh;
+
+// //   span {
+// //     font-size: 80px;
+// //     font-weight: 800;
+// //   }
+
+// //   // .studyFields {
+// //   // width: 300px;
+
+// //   .field {
+// //     display: flex;
+
+// //     // justify-content: center;
+// //     // align-items: center;
+// //     position: absolute;
+// //     top: 0;
+// //     font-size: 3rem;
+// //     color: #646464cc;
+// //     line-height: 4rem;
+// //     margin: 1.75rem 2rem;
+
+// //     &.active {
+// //       display: flex;
+// //     }
+// //   }
+// //   // }
+// // }
+// .homeContent {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   height: 75vh;
+
+//   span {
+//     font-size: 80px;
+//     font-weight: 800;
+//   }
+
+//   // .studyFields {
+//   // width: 300px;
+
+//   .field {
+//     opacity: 0;
+//     width: 300px;
+//     background-color: #000;
+//     color: #fff;
+
+//     position: absolute;
+//     top: -30px;
+//     font-size: 4rem;
+
+//     line-height: 4rem;
+
+//     transition: 0.5s;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     // margin: 0 2rem;
+
+//     &.active {
+//       opacity: 1;
+//     }
+//   }
+//   // }
+// }
+
+// .content {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 60vh;
+//   font-size: 40px;
+//   line-height: 40px;
+//   color: #000;
+
+//   span {
+//     font-size: 80px;
+//     font-weight: 800;
+//   }
+
+//   &__container {
+//     font-weight: 600;
+//     overflow: hidden;
+//     height: 50px;
+//     padding: 0 40px;
+
+//     &__text {
+//       display: inline;
+//       float: center;
+//       margin: 0;
+//     }
+
+//     &__list {
+//       margin-top: 0;
+
+//       text-align: left;
+//       list-style: none;
+
+//       animation-name: change;
+//       animation-duration: 10s;
+//       animation-delay: 2s;
+//       animation-iteration-count: infinite;
+
+//       &__item {
+//         line-height: 50px;
+//         margin: 0;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes change {
+//   0%,
+//   100% {
+//     transform: translateY(0);
+//   }
+//   8.33%,
+//   91.66% {
+//     transform: translateY(-14.3%);
+//   }
+//   16.66%,
+//   83.33% {
+//     transform: translateY(-28.6%);
+//   }
+//   25%,
+//   75% {
+//     transform: translateY(-42.9%);
+//   }
+//   33.33%,
+//   66.66% {
+//     transform: translateY(-57.2%);
+//   }
+//   41.66%,
+//   58.33% {
+//     transform: translateY(-71.5%);
+//   }
+
+//   50% {
+//     transform: translateY(-85.8%);
+//   }
+// }
+
+// // 6 is the number of animation.
+// // Here, there are 4 lines :
+
+// // 1 to 2
+// // 2 to 3
+// // 3 to 4
+// // 4 to 5
+// // 5 to 6
+// // 6 to 7
+// // 7 to 6
+// // 6 to 5
+// // 5 to 4
+// // 4 to 3
+// // 3 to 2
+// // 2 to 1
+
+// // 6x + 6y = 100 (100% duration)
+
+// // HERE :
+// // y = 4 -> Animation between two lines
+// // x = 12.66 -> Time spent on a line
+
+// // You can define a value and calculate the other if you want change speed or the number of lines
+
+
+.home {
+  .homeHero {
+    width: 100%;
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+
+    .heroImg {
+
+
+      img {
+        object-fit: contain;
+        // height: 24rem;
+      }
+    }
+
+    .heroContent {
+      display: flex;
+      padding: 1.5rem;
+      text-align: left;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 0.125rem;
+      max-width: 32rem;
+
+      h1 {
+        font-size: 3.75rem;
+        line-height: 1;
+        font-weight: 700;
+
+        span {
+          letter-spacing: 1.5rem;
+          color: #55bbf6;
+        }
+      }
+
+      p {
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+    }
+  }
+
+
+  .feature {
+    gap: 24px;
+    padding: 64px 0;
+
+    .featureContainer {
+      background: #F9FAFB;
+      box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      padding: 64px;
+      gap: 24px;
+
+      .featureImg {
+        width: 550px;
+        height: 400px;
+        display: flex;
+
+        img {
+          border-radius: 20px;
+        }
+      }
+
+      .featureContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 0px 0px;
+
+        span {
+          background: #EDF0F3;
+          border-radius: 6px;
+          padding: 4px 8px;
+          font-weight: 500;
+          font-size: 14px;
+          color: #2F54EB;
+        }
+
+        h2 {
+          font-weight: 600;
+          font-size: 36px;
+          margin: 24px 0;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+        }
+
+        .btn {
+          padding: 8px 12px;
+          gap: 4px;
+          background: #2F54EB;
+          border-radius: 6px;
+          color: white;
+        }
+      }
+
+    }
+  }
+
+  .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .faqContainer {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 48px;
+
+      .faqItem {
+        grid-column: span 1 / span 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 24px;
+        gap: 8px;
+        background: #F9FAFB;
+        border-radius: 6px;
+
+        h3 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+
+
+
+  }
+}

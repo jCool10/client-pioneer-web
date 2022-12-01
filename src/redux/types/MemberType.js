@@ -1,0 +1,1 @@
+export const MEMBER_DETAIL_TYPE = 'MEMBER_DETAIL_TYPE';

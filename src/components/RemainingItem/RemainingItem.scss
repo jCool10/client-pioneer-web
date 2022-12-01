@@ -1,0 +1,27 @@
+.RemainingItem {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+  // height: 120px;
+
+  .itemImg {
+
+    grid-column: span 3 / span 3;
+  }
+
+  .itemContent {
+    grid-column: span 5 / span 5;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .decs {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
